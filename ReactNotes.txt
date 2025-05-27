@@ -1,0 +1,16 @@
+Type of Components :-
+
+1 :- Class Based Component :- Js class, Statefull,No Hooks, Life Cycle Methods,this keyword, render() method.
+2 :- Function Based Component :-Js Function, State less,Hooks, No Life Cycle Methods, No this keyword, Not render() method.
+
+
+Web Two types :-
+                Single Page Application :- React js.
+                Multi Page Application :- HTML, CSS, JS.
+
+
+                props(Properties) :- Send Data Parent to Child.
+
+Create Context Step :-  1 createContext
+                        2 provide Context
+                        3 Consume Context
