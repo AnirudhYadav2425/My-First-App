@@ -56,16 +56,22 @@ const TodoWrapper = () => {
         {
             setTodo(todoToEdit.text);
             setEditTodoId(id);
-        }
-        
-        
+        }  
+    }
+
+    function deleteTodo(id)
+    {
+       let filteredTodo = allTodos.filter((ele)=>{
+            return ele.id !==id
+        });
+        setAllTodos(filteredTodo);
     }
 
 
   return (
     <div>
-        <CreateTodo todo={todo} setTodo={setTodo} addTodo={addTodo} />
-        <DisplayTodo allTodos={allTodos} editTodo={editTodo} />
+        <CreateTodo todo={todo} setTodo={setTodo} addTodo={addTodo}/>
+        <DisplayTodo allTodos={allTodos} editTodo={editTodo} deleteTodo={deleteTodo} />
     </div>
   )
 }

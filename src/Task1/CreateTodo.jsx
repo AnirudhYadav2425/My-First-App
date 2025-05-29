@@ -15,7 +15,7 @@ const CreateTodo = ({todo,setTodo,addTodo }) => {
         <br />
 
             <button type="submit" >Add Todo</button>
-        </form>
+        </form> 
 
     </div>
   )

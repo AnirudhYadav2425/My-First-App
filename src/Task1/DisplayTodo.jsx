@@ -2,7 +2,7 @@ import React from 'react'
 import style from './displaytodo.module.css'
 
 
-const DisplayTodo = ({allTodos,editTodo}) => {
+const DisplayTodo = ({allTodos,editTodo, deleteTodo}) => {
     console.log(allTodos);
 
     
@@ -14,7 +14,7 @@ const DisplayTodo = ({allTodos,editTodo}) => {
                 <div key={ele.id} className={style.todoDiv} >
                     <h2>{ele.text}</h2>
                     <button onClick={()=> editTodo(ele.id)}>Edit</button>
-                    <button>Delete</button>
+                    <button onClick={()=> deleteTodo(ele.id)}>Delete</button>
                 </div>
             );
         })};

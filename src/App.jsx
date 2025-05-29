@@ -24,6 +24,7 @@ import InlineCSS from "./alltopics/08_reactCSS/InlineCSS";
 import Card from "./alltopics/08_reactCSS/Card";
 import ControlledForms1 from "./alltopics/09_controlledforms/ControlledForms1";
 import TodoWrapper from "./Task1/TodoWrapper";
+import UncontrolledForms from "./alltopics/10_uncontrolledForms/UncontrolledForms";
 
 const App= () => 
 {
@@ -58,7 +59,8 @@ const App= () =>
             {/* <InlineCSS/> */}
             {/* <Card/> */}
             {/* <ControlledForms1/> */}
-            <TodoWrapper/>
+            {/* <TodoWrapper/> */}
+            <UncontrolledForms/>
 
          </div>
     );
